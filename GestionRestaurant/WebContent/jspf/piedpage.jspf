@@ -1,0 +1,13 @@
+<!--  
+	Pieds de page du template
+	Crée le 11/02/2018 par Lahad NGOM
+ -->
+</main><!-- /.container -->
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="ressources/js/jquery-3.2.1.slim.min.js"> </script>
+    <script src="ressources/js/popper.min.js"></script>
+    <script src="ressources/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.custom.i18n.resources" value="app" />
+	<package name="com.lng.actions" namespace="/" extends="struts-default">
+		<default-action-ref name="list_Menu" />
+		
+		<action name="ajout_Menu">
+			<result>/jsp/ajout_Menu.jsp</result>
+		</action>
+		<action name="enregistrer_Menu" class="com.lng.actions.MenuAction" method="enregistrer">
+			<result name="success">/jsp/details_Menu.jsp</result>
+			<result name="input">/jsp/ajout_Menu.jsp</result>
+		</action>
+		<action name="list_Menu" class="com.lng.actions.MenuAction" method="lister">
+			<result name="success">/jsp/list_Menu.jsp</result>
+		</action>
+	</package>
+</struts>

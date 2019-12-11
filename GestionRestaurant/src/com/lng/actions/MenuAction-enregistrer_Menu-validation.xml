@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+	"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<field name="plat">
+		<field-validator type="requiredstring">
+			<message key="app.erreur.menu.platvide" />
+		</field-validator>
+	</field>
+	
+	<field name="prix">
+		<field-validator type="required">
+			<message key="app.erreur.prixvide" />
+		</field-validator>
+	</field>
+	
+	<field name="desc">
+		<field-validator type="stringlength">
+			<param name="minLength">50</param>
+			<message key="app.erreur.menu.tailleplat" />
+		</field-validator>
+	</field>
+	
+</validators>
